@@ -1,8 +1,10 @@
 import React, { useRef, useState } from "react";
 import emailjs from '@emailjs/browser';
+import { useNavigate } from 'react-router-dom';
 
 const ContactFormSection = () => {
   const formRef = useRef();
+  const navigate = useNavigate();
   const [errors, setErrors] = useState({});
   const [isSending, setIsSending] = useState(false);
 
@@ -12,6 +14,7 @@ const ContactFormSection = () => {
     templateId: "template_ito81i4", 
     publicKey: "KMtxeuThzMItKsmDc", 
   };
+
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -55,8 +58,9 @@ const ContactFormSection = () => {
       );
 
       if (result.status === 200) {
-        alert("✅ Message sent successfully! We'll contact you shortly.");
         formRef.current.reset();
+        // Redirect to thank-you page
+        navigate('/thank-you');
       } else {
         alert("❌ Failed to send message. Please try again.");
       }
@@ -143,6 +147,7 @@ const ContactFormSection = () => {
                 </div>
               </div>
             </form>
+
           </div>
         </div>
       </div>

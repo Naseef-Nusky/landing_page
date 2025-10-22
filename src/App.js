@@ -18,6 +18,7 @@ import Missing from './pages/services/Missing.jsx';
 import Covert from './pages/services/Covert.jsx';
 import Fraud from './pages/services/Fraud.jsx';
 import Background from './pages/services/Background.jsx';
+import ThankYou from './pages/ThankYou.jsx';
 
 // ScrollToTop Component
 const ScrollToTop = () => {
@@ -59,6 +60,9 @@ function App() {
           <Route path="/services/covert" element={<Covert />} />
           <Route path="/services/fraud" element={<Fraud />} />
           <Route path="/services/background" element={<Background />} />
+          
+          {/* Thank You page */}
+          <Route path="/thank-you" element={<ThankYou />} />
         </Routes>
 
         <Footer />

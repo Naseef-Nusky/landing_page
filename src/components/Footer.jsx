@@ -25,7 +25,7 @@ const Footer = () => {
           <div className="space-y-3 mb-12">
             {/* Phone and Email */}
             <div className="text-black text-[12px]">
-              <span>Phone: 078 20416406</span><br />
+              <span>Phone: 07826 416466</span><br />
               <span className="mx-2">Email:</span>
               <a href="mailto:private@hendersonthomasinvestigations.com" className="text-black hover:text-blue-600">
                 private@hendersonthomasinvestigations.com
@@ -34,7 +34,7 @@ const Footer = () => {
 
             {/* Address */}
             <div className="text-black text-[12px]">
-              1st Floor, 238 Kennington High St, London W8 6SN
+              1st Floor, 238 Kensington High St, London W8 6SN
             </div>
           </div>
 
