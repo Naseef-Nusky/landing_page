@@ -5,9 +5,10 @@ const HeroSection = () => {
     <section
       className="relative min-h-[60vh] flex items-center bg-no-repeat bg-cover bg-center"
       style={{
-        backgroundImage: `url('hero-landing.jpg ')`,
+        backgroundImage: `url('hero.png')`,
       }}
     >
+      <div className="absolute inset-0 bg-black/50"></div>
       <div className="container mx-auto px-4 relative z-10 w-full">
         <div className="flex flex-col items-center justify-center text-center">
           {/* Main Headline */}
